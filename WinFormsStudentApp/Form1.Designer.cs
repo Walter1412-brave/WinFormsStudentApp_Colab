@@ -9,6 +9,8 @@ namespace WinFormsStudentApp
 
         private System.Windows.Forms.Label lblStudentName;
         private System.Windows.Forms.TextBox txtStudentName;
+        private System.Windows.Forms.Label lblCourseName;
+        private System.Windows.Forms.TextBox txtCourseName;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -49,12 +51,31 @@ namespace WinFormsStudentApp
             this.txtStudentName.Size = new System.Drawing.Size(150, 23);
             this.txtStudentName.TabIndex = 1;
 
+            this.lblCourseName = new System.Windows.Forms.Label();
+            this.txtCourseName = new System.Windows.Forms.TextBox();
+
+            // lblCourseName
+            this.lblCourseName.AutoSize = true;
+            this.lblCourseName.Location = new System.Drawing.Point(20, 50);
+            this.lblCourseName.Name = "lblCourseName";
+            this.lblCourseName.Size = new System.Drawing.Size(81, 15);
+            this.lblCourseName.TabIndex = 2;
+            this.lblCourseName.Text = "Course Name:";
+
+            // txtCourseName
+            this.txtCourseName.Location = new System.Drawing.Point(110, 47);
+            this.txtCourseName.Name = "txtCourseName";
+            this.txtCourseName.Size = new System.Drawing.Size(150, 23);
+            this.txtCourseName.TabIndex = 3;
+
             // Form1
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.txtStudentName);
             this.Controls.Add(this.lblStudentName);
+            this.Controls.Add(this.txtCourseName);
+            this.Controls.Add(this.lblCourseName);
             this.Name = Form1;
             this.Text = Form1;
             this.ResumeLayout(false);
